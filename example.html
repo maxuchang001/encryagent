@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encry Agent - 企业级智能代理</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2B4C7E',
+            secondary: '#4A90E2'
+          },
+          borderRadius: {
+            'button': '4px'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { min-height: 100vh; }
+    .hero-bg {
+      background-image: url('https://ai-public.mastergo.com/ai/img_res/14045afc4955233fe39a41d383ba580f.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="fixed w-full bg-white shadow z-50">
+    <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="text-3xl font-['Pacifico'] text-primary">Encry Agent</a>
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#about" class="text-gray-600 hover:text-primary transition">关于我们</a>
+        <a href="#features" class="text-gray-600 hover:text-primary transition">解决方案</a>
+        <a href="#process" class="text-gray-600 hover:text-primary transition">流程</a>
+        <a href="#contact" class="text-gray-600 hover:text-primary transition">联系我们</a>
+        <button class="bg-primary text-white px-6 py-2 rounded-button hover:bg-opacity-90 transition">免费演示</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pt-24">
+    <!-- Hero -->
+    <section class="hero-bg py-32">
+      <div class="container mx-auto px-6 text-center text-white">
+        <h1 class="text-5xl font-bold mb-4">企业级智能代理</h1>
+        <p class="text-xl mb-6">AI 驱动，让您的业务更高效，成就非凡。</p>
+        <div class="space-x-4">
+          <button class="bg-primary px-8 py-3 rounded-button font-semibold hover:bg-opacity-90 transition">立即体验</button>
+          <button class="bg-white text-primary px-8 py-3 rounded-button font-semibold hover:bg-gray-100 transition">了解更多</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-8">打造属于您的智能代理</h2>
+        <p class="max-w-3xl mx-auto text-gray-700 text-lg">
+          在 Encry Agent，我们的使命是构建符合您独特业务需求的 AI 智能代理。安全、可扩展、高度可定制，超越传统 SaaS，让您的企业保持敏捷与创新。
+        </p>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">我们的核心能力</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-lg shadow">
+            <h3 class="text-2xl font-semibold mb-4">最强 RAG 系统</h3>
+            <p class="text-gray-600">我们正在打造最强的 RAG 系统，在多个关键数据集上超越 Dify、fastGPT 和 RAGflow。</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow">
+            <h3 class="text-2xl font-semibold mb-4">可定制化解决方案</h3>
+            <p class="text-gray-600">全程支持本地 AI 处理，提供高度定制化体验，满足复杂企业场景。</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow">
+            <h3 class="text-2xl font-semibold mb-4">安全与合规</h3>
+            <p class="text-gray-600">多层加密与权限管理，确保企业数据万无一失，符合国际安全标准。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">我们的流程</h2>
+        <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
+          <div class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mb-4">1</div>
+            <p>深入调研客户需求</p>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mb-4">2</div>
+            <p>快速原型与验证</p>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mb-4">3</div>
+            <p>界面与交互设计</p>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mb-4">4</div>
+            <p>后台与前端开发</p>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mb-4">5</div>
+            <p>上线部署与持续优化</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-6">准备好改变您的业务了吗？</h2>
+        <p class="text-gray-700 mb-8">立即联系我们，体验 Encry Agent 的强大能力，开启数字化转型。</p>
+        <button class="bg-primary text-white px-8 py-3 rounded-button font-semibold hover:bg-opacity-90 transition">联系我们</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="text-2xl font-['Pacifico'] mb-4">Encry Agent</h3>
+        <p class="text-gray-400">企业级智能代理专家</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4">产品</h4>
+        <ul class="space-y-2">
+          <li><a href="#features" class="text-gray-400 hover:text-white">RAG 服务</a></li>
+          <li><a href="#features" class="text-gray-400 hover:text-white">定制化代理</a></li>
+          <li><a href="#features" class="text-gray-400 hover:text-white">安全合规</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4">资源</h4>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-gray-400 hover:text-white">文档中心</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white">API 接口</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4">联系我们</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li class="flex items-center"><i class="fas fa-envelope mr-2"></i>hello@encryagent.com</li>
+          <li class="flex items-center"><i class="fas fa-phone mr-2"></i>400-123-4567</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 mt-8 pt-6 text-center text-gray-500">
+      © 2024 Encry Agent. All Rights Reserved.
+    </div>
+  </footer>
+</body>
+</html>
