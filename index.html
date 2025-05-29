@@ -4,10 +4,168 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Encry Agent</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encry Agent - Enterprise Intelligence Agent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2B4C7E',
+                        secondary: '#4A90E2'
+                    },
+                    borderRadius: {
+                        'button': '4px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { min-height: 100vh; }
+        .hero-bg {
+            background-image: url('https://ai-public.mastergo.com/ai/img_res/14045afc4955233fe39a41d383ba580f.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow z-50">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="text-3xl font-['Pacifico'] text-primary">Encry Agent</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-primary transition">About Us</a>
+                <a href="#features" class="text-gray-600 hover:text-primary transition">Solutions</a>
+                <a href="#process" class="text-gray-600 hover:text-primary transition">Process</a>
+                <a href="#contact" class="text-gray-600 hover:text-primary transition">Contact Us</a>
+                <button class="bg-primary text-white px-6 py-2 rounded-button hover:bg-opacity-90 transition">Free Demo</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-24">
+        <!-- Hero -->
+        <section class="hero-bg py-32">
+            <div class="container mx-auto px-6 text-center text-white">
+                <h1 class="text-5xl font-bold mb-4">Enterprise Intelligence Agent</h1>
+                <p class="text-xl mb-6">AI-driven, making your business more efficient, achieving excellence.</p>
+                <div class="space-x-4">
+                    <button class="bg-primary px-8 py-3 rounded-button font-semibold hover:bg-opacity-90 transition">Get Started</button>
+                    <button class="bg-white text-primary px-8 py-3 rounded-button font-semibold hover:bg-gray-100 transition">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-8">Build Your Own Intelligence Agent</h2>
+                <p class="max-w-3xl mx-auto text-gray-700 text-lg">
+                    At Encry Agent, our mission is to build AI intelligent agents that meet your unique business needs. Secure, scalable, highly customizable, surpassing traditional SaaS to keep your enterprise agile and innovative.
+                </p>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section id="features" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Our Core Capabilities</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow">
+                        <h3 class="text-2xl font-semibold mb-4">Superior RAG System</h3>
+                        <p class="text-gray-600">We're building the strongest RAG system, outperforming Dify, fastGPT, and RAGflow across multiple key datasets.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow">
+                        <h3 class="text-2xl font-semibold mb-4">Customizable Solutions</h3>
+                        <p class="text-gray-600">Full support for local AI processing, providing highly customized experiences for complex enterprise scenarios.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow">
+                        <h3 class="text-2xl font-semibold mb-4">Security & Compliance</h3>
+                        <p class="text-gray-600">Multi-layer encryption and permission management, ensuring enterprise data security, compliant with international standards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section id="process" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Our Process</h2>
+                <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mb-4">1</div>
+                        <p>In-depth Client Research</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mb-4">2</div>
+                        <p>Rapid Prototype & Validation</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mb-4">3</div>
+                        <p>UI & Interaction Design</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mb-4">4</div>
+                        <p>Backend & Frontend Development</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mb-4">5</div>
+                        <p>Deployment & Continuous Optimization</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Business?</h2>
+                <p class="text-gray-700 mb-8">Contact us now to experience the power of Encry Agent and start your digital transformation.</p>
+                <button class="bg-primary text-white px-8 py-3 rounded-button font-semibold hover:bg-opacity-90 transition">Contact Us</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-2xl font-['Pacifico'] mb-4">Encry Agent</h3>
+                <p class="text-gray-400">Enterprise Intelligence Agent Expert</p>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Products</h4>
+                <ul class="space-y-2">
+                    <li><a href="#features" class="text-gray-400 hover:text-white">RAG Services</a></li>
+                    <li><a href="#features" class="text-gray-400 hover:text-white">Custom Agents</a></li>
+                    <li><a href="#features" class="text-gray-400 hover:text-white">Security & Compliance</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Resources</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white">Documentation</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">API Reference</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Help Center</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Contact Us</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li class="flex items-center"><i class="fas fa-envelope mr-2"></i>hello@encryagent.com</li>
+                    <li class="flex items-center"><i class="fas fa-phone mr-2"></i>400-123-4567</li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-6 text-center text-gray-500">
+            © 2024 Encry Agent. All Rights Reserved.
+        </div>
+    </footer>
+</body>
 </html>
